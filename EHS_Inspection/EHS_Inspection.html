@@ -529,9 +529,13 @@
                   </tr>
                 </tbody>
                 </table>
-                <span class="leftFoot">Environmental Health & Safety</span>
-                <span class="centerFoot">NYPL</span>
-                <span class="rightFoot">1/24/2023</span>
+                <!-- <div class="footer">
+                <div class="footer-grid">
+                <div class="leftFoot">Environmental Health & Safety</div>
+                <div class="centerFoot">New York Public Library</div>
+                <div class="rightFoot">1/24/2023</div>
+              </div>
+            </div> -->
               </form>
             </div>
           </div>
@@ -605,7 +609,7 @@ td.checkboxColumn {
 }
 
 .addCommentsArea {
-  height: 60px;
+  height: 50px;
 }
 
 .logo {
@@ -626,20 +630,42 @@ margin-top: 10px;
   font-weight: bold;
 }
 
+.footer {
+  position:absolute; 
+  top: 1020px;
+  width: 100%;
+}
+
+.footer-grid {
+  display: grid;
+  grid-auto-columns: auto;
+  margin:10px;
+  justify-content: space-between;
+}
+
 .leftFoot {
+  display: grid;
   text-align: left;
-  margin-left: 10px;
-  display: flexbox;
+  grid-column: 1;
+  width: fit-content;
+  grid-row: 1;
 }
 
 .centerFoot {
+  display: grid;
   text-align: center;
-  display: flexbox;
+  grid-column: 2;
+  width: fit-content;
+  grid-row: 1;
 }
 
 .rightFoot {
+  display: grid;
   text-align: right;
-  display: flexbox;
+  grid-column: 3;
+  width: fit-content;
+  grid-row: 1;
+  justify-content: end;
 }
 
 table {
@@ -687,6 +713,10 @@ input[type=date] {
 
 .main-wrapper {
   border:none
+}
+
+* {
+  margin: none;
 }
 
   }
