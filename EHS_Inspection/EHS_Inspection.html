@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" href="css/pico.classless.css">
     <title></title>
   </head>
   <body>
@@ -19,7 +19,7 @@
                   <h2 class="">Environmental Health & Safety Inspection Checklist</h2>
                 </div>
           
-                <table>
+                <table class="headTable">
                   <tr>
                     <td>
                       <label class="form-label">Site Name:</label>
@@ -51,7 +51,8 @@
                 </table>
           
           
-                <div class="descriptionField">
+                <div class="form-title">
+                  <label>Instructions</label>
                   <p>
                     Check the Approiate <b>Yes</b> or <b>No</b> box for each question. If you check <b>Yes</b> for a question,
                     provide additional details in the <b>Comments</b> box. If a question is no applicable to the site, write
@@ -62,23 +63,23 @@
           
                 <table class="dataTable">
                   <colgroup>
-                    <col class="mainCol">
-                    <col class="yCheckCol">
-                    <col class="nCheckCol">
-                    <col class="comCol">
+                    <col class="mainField">
+                    <col class="yCheckField">
+                    <col class="nCheckField">
+                    <col class="commentField">
                   </colgroup>
                   <tr class="row-header-gs">
                     <td>
-                      <label class="form-label">General Safety</label>
+                      <label id="header" class="form-label">General Safety</label>
                     </td>
                     <td class="thinCell">
-                      <label class="form-label">Yes</label>
+                      <label id="header">Yes</label>
                     </td>
                     <td class="thinCell">
-                      <label class="form-label">No</label>
+                      <label id="header">No</label>
                     </td>
                     <td>
-                      <label class="label-comment">Comments</label>
+                      <label id="header" class="label-comment">Comments</label>
                     </td>
                   </tr>
                   <tr>
@@ -285,23 +286,23 @@
           
                 <table class="dataTable">
                   <colgroup>
-                    <col class="mainCol">
-                    <col class="yCheckCol">
-                    <col class="nCheckCol">
-                    <col class="comCol">
+                    <col class="mainField">
+                    <col class="yCheckField">
+                    <col class="nCheckField">
+                    <col class="commentField">
                   </colgroup>
                   <tr class="row-header-es">
                     <td>
-                      <label class="form-label">Electrical Safety</label>
+                      <label id="header" class="form-label">Electrical Safety</label>
                     </td>
                     <td class="thinCell">
-                      <label class="form-label">Yes</label>
+                      <label id="header">Yes</label>
                     </td>
                     <td class="thinCell">
-                      <label class="form-label">No</label>
+                      <label id="header">No</label>
                     </td>
                     <td>
-                      <label class="label-comment">Comments</label>
+                      <label id="header" class="label-comment">Comments</label>
                     </td>
                   </tr>
                   <tr>
@@ -352,23 +353,23 @@
           
                 <table class="dataTable">
                   <colgroup>
-                    <col class="mainCol">
-                    <col class="yCheckCol">
-                    <col class="nCheckCol">
-                    <col class="comCol">
+                    <col class="mainField">
+                    <col class="yCheckField">
+                    <col class="nCheckField">
+                    <col class="commentField">
                   </colgroup>
                   <tr class="row-header-cs">
                     <td>
-                      <label class="form-label">Chemical Safety</label>
+                      <label id="header" class="form-label">Chemical Safety</label>
                     </td>
                     <td class="thinCell">
-                      <label class="form-label">Yes</label>
+                      <label id="header">Yes</label>
                     </td>
                     <td class="thinCell">
-                      <label class="form-label">No</label>
+                      <label id="header">No</label>
                     </td>
                     <td>
-                      <label class="label-comment">Comments</label>
+                      <label id="header" class="label-comment">Comments</label>
                     </td>
                   </tr>
                   <tr>
@@ -444,25 +445,26 @@
                   </tr>
                 </table>
 
+
                 <table class="dataTable">
                   <colgroup>
-                    <col class="mainCol">
-                    <col class="yCheckCol">
-                    <col class="nCheckCol">
-                    <col class="comCol">
+                    <col class="mainField">
+                    <col class="yCheckField">
+                    <col class="nCheckField">
+                    <col class="commentField">
                   </colgroup>
                   <tr class="row-header-fs">
                     <td>
-                      <label class="form-label">Fire Safety</label>
+                      <label id="header" class="form-label">Fire Safety</label>
                     </td>
                     <td class="thinCell">
-                      <label class="form-label">Yes</label>
+                      <label id="header">Yes</label>
                     </td>
                     <td class="thinCell">
-                      <label class="form-label">No</label>
+                      <label id="header">No</label>
                     </td>
                     <td>
-                      <label class="label-comment">Comments</label>
+                      <label id="header" class="label-comment">Comments</label>
                     </td>
                   </tr>
                   <tr>
@@ -509,10 +511,27 @@
                   </tr>
                 </table>
           
+
                 </tr>
                 </table>
-          
-                <footer>NYPL</footer>
+
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>
+                      <label>Additional Comments:</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <textarea class="addCommentsArea"></textarea>
+                    </td>
+                  </tr>
+                </tbody>
+                </table>
+                <span class="leftFoot">Environmental Health & Safety</span>
+                <span class="centerFoot">NYPL</span>
+                <span class="rightFoot">1/24/2023</span>
               </form>
             </div>
           </div>
@@ -523,45 +542,25 @@
 <style>
 
 * {
-font-size: 9px;
-
-}
-
-td {
-  padding: 0px;
-}
-
-.form-wrapper {
-margin-left: 30px;
-margin-right: 30px;
-margin-top:15px;
-margin-bottom:15px;
-
-
+font-size: 10px;
 }
 
 textarea {
-    height: 10px;
+    height: 15px;
     resize: none;
     overflow: hidden;
     margin-bottom: 0px;
+    padding:0px;
 }
 
 input[type=text] {
-    height: 20px;
+    height: 10px;
     margin-bottom: 0px;
 }
 
 input[type=date] {
-    height: 20px;
-}
-
-td {
-  padding-left:10px
-}
-
-.descriptionField {
-  padding-top: 10px;
+    height: 10px;
+    margin-bottom: 0px;
 }
 
 .main-wrapper {
@@ -570,34 +569,126 @@ td {
     max-height: 1056px;
     min-height: 1056px;
     contain:strict;
+    font-size: small;
     border: solid;
 }
 
-.comCol {
+.mainField {
   width: 400px;
+  text-align: left;
 }
 
+.form-title {
+  margin-left:50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+    margin-left:30px;
+    margin-right:50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+td  {
+  border: solid;
+  padding: 1px;
+  border-width: 0.0625rem;
+  border-color:#e7eaf0;
+}
+
+td.checkboxColumn {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.addCommentsArea {
+  height: 60px;
+}
 
 .logo {
-    width: 200px;
-    margin-bottom: 15px
+    width:200px;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: 10px;
+
 }
 
 .dataTable {
-margin-top: 30px
+margin-left:50px;
+margin-right: 50px;
+margin-top: 10px;
+}
+
+.headTable > tbody > tr > td > label {
+  font-weight: bold;
+}
+
+.leftFoot {
+  text-align: left;
+  margin-left: 10px;
+  display: flexbox;
+}
+
+.centerFoot {
+  text-align: center;
+  display: flexbox;
+}
+
+.rightFoot {
+  text-align: right;
+  display: flexbox;
+}
+
+table {
+    margin-left:50px;
+    margin-right:50px;
+    width: 85%;
+}
+
+#header {
+  font-weight: bold;
+  text-align: center;
+}
+
+label#header.form-label {
+text-align: left;
+}
+
+label {
+  padding-left: 5px;
+}
+
+footer {
+  display:flex;
+  justify-content: center;
 }
 
 @media print {
   /* All your print styles go here */
-  input[type=date] {
-    color: transparent;
-    background-image: none;
+
+    input[type=date] {
+      color: transparent;
+  }
+
+  textarea {
+    border-color: transparent;
+  }
+
+  input[type=text] {
+    border: transparent
 }
 
-textarea {
-  border:none;
-  background-color: transparent;
+input[type=date] {
+    border: transparent
 }
+
+.main-wrapper {
+  border:none
+}
+
   }
 
 </style>
