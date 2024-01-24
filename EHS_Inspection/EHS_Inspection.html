@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+  </head>
+  <body>
+        <div class="mainArea">
+        <div class="main-wrapper">
+
+            <div class="form-wrapper">
+                <header>
+              <img class="logo" src="NYPL_logo_Masthead.png">
+                </header>
+              <form>
+                <div class="form-title">
+                  <h2 class="">Environmental Health & Safety Inspection Checklist</h2>
+                </div>
+          
+                <table>
+                  <tr>
+                    <td>
+                      <label class="form-label">Site Name:</label>
+                    </td>
+                    <td>
+                      <input type="text" name="sitename" id="sitename" class="form-input" />
+                    </td>
+                    <td>
+                      <label class="form-label">Inspection Date:</label>
+                    </td>
+                    <td>
+                      <input type="date" name="inspectiondate" id="inspectiondate" class="form-input" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label">Site Address:</label>
+                    </td>
+                    <td>
+                      <input type="text" name="siteaddress" id="siteaddress" class="form-input" />
+                    </td>
+                    <td>
+                      <label class="form-label">Inspected by:</label>
+                    </td>
+                    <td>
+                      <input type="text" name="inspectiondate" id="inspectiondate" class="form-input" />
+                    </td>
+                  </tr>
+                </table>
+          
+          
+                <div class="descriptionField">
+                  <p>
+                    Check the Approiate <b>Yes</b> or <b>No</b> box for each question. If you check <b>Yes</b> for a question,
+                    provide additional details in the <b>Comments</b> box. If a question is no applicable to the site, write
+                    <b>N/A</b> across both the <b>Yes</b> and <b>No</b> boxes.
+                  </p>
+                </div>
+          
+          
+                <table class="dataTable">
+                  <colgroup>
+                    <col class="mainCol">
+                    <col class="yCheckCol">
+                    <col class="nCheckCol">
+                    <col class="comCol">
+                  </colgroup>
+                  <tr class="row-header-gs">
+                    <td>
+                      <label class="form-label">General Safety</label>
+                    </td>
+                    <td class="thinCell">
+                      <label class="form-label">Yes</label>
+                    </td>
+                    <td class="thinCell">
+                      <label class="form-label">No</label>
+                    </td>
+                    <td>
+                      <label class="label-comment">Comments</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Slip, trip or fall hazard present?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS1Y" name="GS1Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS1N" name="GS1N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Corridors, stairways and/or egress areas are obstructed?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS2Y" name="GS2Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS2N" name="GS2N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Site is dirty, dusty or not well maintained?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS3Y" name="GS3Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS3N" name="GS3N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Materials stored in Boiler, HVAC, Mechanical and/or Electrical
+                        rooms?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS4Y" name="GS4Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS4N" name="GS4N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Leaks or water damage observed?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS5Y" name="GS5Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS5N" name="GS5N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Suspect Visible microbal growth observed?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS6Y" name="GS6Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS6N" name="GS6N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Damaged building components are present (i.e. peeling paint, deteriorated
+                        plaster or pipe insulation, etc.)?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS7Y" name="GS7Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS7N" name="GS7N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">HVAC system not functional?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS8Y" name="GS8Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS8N" name="GS8N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Roof has debris, clutter and/or vegetation?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS9Y" name="GS9Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS9N" name="GS9N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">MEWP/lift used or stored at the site?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS10Y" name="GS10Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS11N" name="GS11N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Areas within the site are inadequately illuminated?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS12Y" name="GS12Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS12N" name="GS12N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Damaged ladders are presents?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS13Y" name="GS13Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS13N" name="GS13N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Missing or damaged AED or first aid kit on site?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS14Y" name="GS14Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS14N" name="GS14N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Missing applicable posting present (i.e. Airborne Infectious Disease Plan,
+                        Key2NYC, etc.)?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS15Y" name="GS15Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="GS15N" name="GS15N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  </tr>
+                </table>
+          
+          
+                <table class="dataTable">
+                  <colgroup>
+                    <col class="mainCol">
+                    <col class="yCheckCol">
+                    <col class="nCheckCol">
+                    <col class="comCol">
+                  </colgroup>
+                  <tr class="row-header-es">
+                    <td>
+                      <label class="form-label">Electrical Safety</label>
+                    </td>
+                    <td class="thinCell">
+                      <label class="form-label">Yes</label>
+                    </td>
+                    <td class="thinCell">
+                      <label class="form-label">No</label>
+                    </td>
+                    <td>
+                      <label class="label-comment">Comments</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Materials stored on or near electrical panels?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="ES1Y" name="ES1Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="ES1N" name="ES1N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Electrical junction boxes or panels open or missing dead front
+                        panel?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="ES2Y" name="ES2Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="ES2N" name="ES2N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Exposed wiring present?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="ES3Y" name="ES3Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="ES3N" name="ES3N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                </table>
+          
+          
+                <table class="dataTable">
+                  <colgroup>
+                    <col class="mainCol">
+                    <col class="yCheckCol">
+                    <col class="nCheckCol">
+                    <col class="comCol">
+                  </colgroup>
+                  <tr class="row-header-cs">
+                    <td>
+                      <label class="form-label">Chemical Safety</label>
+                    </td>
+                    <td class="thinCell">
+                      <label class="form-label">Yes</label>
+                    </td>
+                    <td class="thinCell">
+                      <label class="form-label">No</label>
+                    </td>
+                    <td>
+                      <label class="label-comment">Comments</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Chemicals not properly stored in a designated area?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS1Y" name="CS1Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS1N" name="CS1N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Hazard Communication Right to Know (RTK) signage not posted?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS2Y" name="CS2Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS2N" name="CS2N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Safety Data Sheet (SDS) binder is not posted prominetly in an employee area
+                        OR SDSs are not available on an employee accessible computer?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS3Y" name="CS3Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS3N" name="CS3N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Fuels (i.e. gasoline, diesel) are not properly stored?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS4Y" name="CS4Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS4N" name="CS4N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Chemical or fuel odors observed?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS5Y" name="CS5Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="CS5N" name="CS5N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="dataTable">
+                  <colgroup>
+                    <col class="mainCol">
+                    <col class="yCheckCol">
+                    <col class="nCheckCol">
+                    <col class="comCol">
+                  </colgroup>
+                  <tr class="row-header-fs">
+                    <td>
+                      <label class="form-label">Fire Safety</label>
+                    </td>
+                    <td class="thinCell">
+                      <label class="form-label">Yes</label>
+                    </td>
+                    <td class="thinCell">
+                      <label class="form-label">No</label>
+                    </td>
+                    <td>
+                      <label class="label-comment">Comments</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Fire Extinguishers have not been inspected within the last year?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="FS1Y" name="FS1Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="FS1N" name="FS1N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Fire Extinguishers are not preoperly mounted or displayed?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="FS2Y" name="FS2Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="FS2N" name="FS2N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label class="form-label-simple">Emergency Evacuation Plan is not present or posted?</label>
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="ES3Y" name="ES3Y" value="">
+                    </td>
+                    <td class="checkboxColumn">
+                      <input type="checkbox" id="ES3N" name="ES3N" value="">
+                    </td>
+                    <td>
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                </table>
+          
+                </tr>
+                </table>
+          
+                <footer>NYPL</footer>
+              </form>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>
+
+<style>
+
+* {
+font-size: 9px;
+
+}
+
+td {
+  padding: 0px;
+}
+
+.form-wrapper {
+margin-left: 30px;
+margin-right: 30px;
+margin-top:15px;
+margin-bottom:15px;
+
+
+}
+
+textarea {
+    height: 10px;
+    resize: none;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+input[type=text] {
+    height: 20px;
+    margin-bottom: 0px;
+}
+
+input[type=date] {
+    height: 20px;
+}
+
+td {
+  padding-left:10px
+}
+
+.descriptionField {
+  padding-top: 10px;
+}
+
+.main-wrapper {
+    max-width: 816px;
+    min-width: 816px;
+    max-height: 1056px;
+    min-height: 1056px;
+    contain:strict;
+    border: solid;
+}
+
+.comCol {
+  width: 400px;
+}
+
+
+.logo {
+    width: 200px;
+    margin-bottom: 15px
+}
+
+.dataTable {
+margin-top: 30px
+}
+
+@media print {
+  /* All your print styles go here */
+  input[type=date] {
+    color: transparent;
+    background-image: none;
+}
+
+textarea {
+  border:none;
+  background-color: transparent;
+}
+  }
+
+</style>
