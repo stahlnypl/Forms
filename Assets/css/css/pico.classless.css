@@ -13,7 +13,7 @@
   --pico-font-family: var(--pico-font-family-sans-serif);
   --pico-line-height: 1.5;
   --pico-font-weight: 400;
-  --pico-font-size: 100%;
+  --pico-font-size: 11px;
   --pico-text-underline-offset: 0.1rem;
   --pico-border-radius: 0.25rem;
   --pico-border-width: 0.0625rem;
@@ -784,8 +784,9 @@ p,
 pre,
 table,
 ul {
-  margin-top: 0;
-  margin-bottom: var(--pico-typography-spacing-vertical);
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
   color: var(--pico-color);
   font-style: normal;
   font-weight: var(--pico-font-weight);
@@ -1060,7 +1061,7 @@ button:focus, button:is([aria-current]:not([aria-current=false])):focus,
 
 th,
 td {
-  padding: calc(var(--pico-spacing) / 2) var(--pico-spacing);
+  padding: 1px;
   border-bottom: var(--pico-border-width) solid var(--pico-table-border-color);
   background-color: var(--pico-background-color);
   color: var(--pico-color);
@@ -1253,6 +1254,7 @@ fieldset legend {
   margin-bottom: calc(var(--pico-spacing) * 0.375);
   color: var(--pico-color);
   font-weight: var(--pico-form-label-font-weight, var(--pico-font-weight));
+  padding-left: 5px;
 }
 
 fieldset legend {
@@ -2500,5 +2502,34 @@ textarea,
     transition-duration: 0s !important;
   }
 }
+
+@media print {
+  /* All your print styles go here */
+
+    input[type=date] {
+      color: transparent;
+  }
+
+  textarea {
+    border-color: transparent;
+  }
+
+  input[type=text] {
+    border: transparent
+}
+
+input[type=date] {
+    border: transparent
+}
+
+.main-wrapper {
+  border:none
+}
+
+* {
+  margin: none;
+}
+
+  }
 
 /*# sourceMappingURL=pico.classless.css.map */
