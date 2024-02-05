@@ -2510,25 +2510,14 @@ textarea,
       color: transparent;
   }
 
-  textarea {
-    border-color: transparent;
-  }
 
-  input[type=text] {
-    border: transparent
-}
 
-input[type=date] {
-    border: transparent
-}
 
 .main-wrapper {
   border:none
 }
 
-* {
-  margin: none;
-}
+
 
   }
 
