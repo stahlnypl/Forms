@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Assets/css/pico.classless.css" />
+    <link rel="stylesheet" href="/Assets/css/pico.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="mainArea">
+      <div class="main-wrapper">
+        <div class="form-wrapper">
+          <header>
+            <img class="logo" src="/Assets/imgs/NYPL_logo_Masthead.png" />
+          </header>
+          <div class="form-title">
+            <h2 class="">Individual Air Handler Unit Inspection</h2>
+          </div>
+          <table class="headTable">
+            <tr>
+              <td>
+                <label class="form-label">Site Name:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="sitename"
+                  id="sitename"
+                  class="form-input"
+                />
+              </td>
+              <td>
+                <label class="form-label">Assessment Date:</label>
+              </td>
+              <td>
+                <input
+                  type="date"
+                  name="inspectiondate"
+                  id="inspectiondate"
+                  class="form-input"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="form-label">Site Address:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="siteaddress"
+                  id="siteaddress"
+                  class="form-input"
+                />
+              </td>
+              <td>
+                <label class="form-label">Assessed by:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="inspectiondate"
+                  id="inspectiondate"
+                  class="form-input"
+                />
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr><td class="shaded" style="font-weight: bolder; margin-left: 60px">Air Handler Information</td><td class="shaded"></td><td class="shaded"></td><td class="shaded"></td></tr>
+            <tr>
+              <td class="shaded"><label>Unit Number:</label></td>
+              <td class="shaded">
+                <input
+                  type="text"
+                  name="rooflocation"
+                  id="rooflocation"
+                  class="form-input"
+                />
+              </td>
+              <td class="shaded"><label>Location on Site (floor, room):</label></td>
+              <td class="shaded">
+                <input
+                  type="text"
+                  name="rooflocation"
+                  id="rooflocation"
+                  class="form-input"
+                />
+              </td>
+            </tr>
+          </table>
+          <table>
+            <label class="padding" style="font-weight: bolder; margin-left: 60px"
+              >Filter Information</label
+            >
+            <tr>
+              <td class="noBorder"><label>Filter Dimensions</label></td>
+              <td class="noBorder">
+                <input
+                  type="text"
+                  name="rooflocation"
+                  id="rooflocation"
+                  class="form-input"
+                />
+              </td>
+             </tr>
+          </table>
+          <table>
+            <tr>
+              <td class="noBorder">
+                <div class="grid">
+                  <div><label><input type="checkbox" id="FPAP" name="FPAP" />No Filters</label></div>
+                  <div><label><input type="checkbox" id="FPAP" name="FPAP" />Missing Filters</label></div>
+                  <div><label><input type="checkbox" id="FPAP" name="FPAP" />Non-Pleated</label></div>
+                  <div><label><input type="checkbox" id="FPAP" name="FPAP" />Other: _______________</label></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="noBorder">
+                <div class="grid">
+                  <div><label><input type="checkbox" id="FPAP" name="FPAP" />MERV 7</label></div>
+                  <div><label><input type="checkbox" id="FPAP" name="FPAP" />MERV 8</label></div>
+                  <div><label><input type="checkbox" id="FPAP" name="FPAP" />MERV 9</label></div>
+                  <div><label><input type="checkbox" id="FPAP" name="FPAP" />MERV 10</label></div>
+                </div>
+              </td>
+            </tr>
+              <tr>
+                <td class="noBorder">
+                  <div class="grid">
+                    <div><label><input type="checkbox" id="FPAP" name="FPAP" />MERV 11</label></div>
+                    <div><label><input type="checkbox" id="FPAP" name="FPAP" />MERV 12</label></div>
+                    <div><label><input type="checkbox" id="FPAP" name="FPAP" />MERV 13</label></div>
+                    <div><label><input type="checkbox" id="FPAP" name="FPAP" />MERV 14</label></div>
+                  </div>
+                </td>
+              </tr>
+              </table>
+              <table>
+                <label style=" margin-left: 60px">Condition:</label>
+                <tr>
+                  <td>
+                    <div class="grid">
+                      <div><label><input type="checkbox" id="FPAP" name="FPAP" />Filter Clean</label></div>
+                      <div><label><input type="checkbox" id="FPAP" name="FPAP" />Filter Damaged</label></div>
+                      <div><label><input type="checkbox" id="FPAP" name="FPAP" />Filter Inaccessible</label></div>
+                      <div><label><input type="checkbox" id="FPAP" name="FPAP" />Filter Expired</label></div>
+                      <div><label><input type="checkbox" id="FPAP" name="FPAP" />Filter Incorrect Size</label></div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr><td class="padding shaded" style="font-weight: bolder; margin-left: 60px">Fan Information</td><td class="shaded"></td><td class="shaded"></td><td class="shaded"></td></tr>
+                  <tr>
+                    <td class="noBorder shaded">
+                      <label class="form-label-simple">Fan Condition:</label>
+                    </td>
+                    <td class="noBorder shaded" style="justify-content: space-between;display: flex;">
+                      <a href="#" role="button" class="outline">Nominal</a>
+                      <a href="#" role="button" class="outline">Off-Nominal</a>
+                      <a href="#" role="button" class="outline">Inaccessible</a>
+                    </td>
+                    <td class="shaded"></td>
+                    <td class="shaded"></td>
+                  </tr>
+                  <tr>
+                    <td class="shaded">
+                      <label class="form-label-simple">Fan Belt Condition:</label>
+                    </td>
+                    <td class="shaded" style="justify-content: space-between;display: flex;">
+                      <a href="#" role="button" class="outline">Taut</a>
+                      <a href="#" role="button" class="outline">Loose</a>
+                      <a href="#" role="button" class="outline">Damaged</a>
+                      <a href="#" role="button" class="outline">Inaccessible</a>
+                    </td>
+                    <td class="shaded"></td>
+                    <td class="shaded"></td>
+                  </tr>
+              </table>
+
+                  <table>
+                    <label class="padding" style="font-weight: bolder; margin-left: 60px"
+                      >OSA Damper</label
+                    >
+                    <tr>
+                      <td class="noBorder"><label>OSA Damper Setting (in %, min. 20%)</label></td>
+                      <td class="noBorder">
+                        <input
+                          type="text"
+                          name="rooflocation"
+                          id="rooflocation"
+                          class="form-input"
+                        />
+                      </td>
+                     </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="grid">
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Nominal</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Blocked</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Inaccessible</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Damaged</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Not Applicable</label></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr><td class="padding shaded" style="font-weight: bolder; margin-left: 60px">Bird Screen Condition</td></tr>
+                    <tr>
+                      <td class="shaded">
+                        <div class="grid">
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Nominal</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Damaged</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Dirty/Dusty</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Not Applicable</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Incorrect Size</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Inaccessible</label></div>
+                          
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table>
+                    <label class="padding" style="font-weight: bolder; margin-left: 60px"
+                      >Mixing Box Damper</label
+                    >
+                    <tr>
+                      <td class="noBorder"><label>Mixing Box Damper Setting (in %)</label></td>
+                      <td class="noBorder">
+                        <input
+                          type="text"
+                          name="rooflocation"
+                          id="rooflocation"
+                          class="form-input"
+                        />
+                      </td>
+                     </tr>
+                  </table>
+                  <table>
+                    <tr>                 
+                      <td>
+                        <div class="grid">
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Nominal</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Blocked</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Inaccessible</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Damaged</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Not Applicable</label></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr><td class="padding shaded" style="font-weight: bolder; margin-left: 60px">Coil Condition</td></tr>
+                    <tr>
+                      <td class="shaded">
+                        <div class="grid">
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Nominal</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Damaged</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Dirty</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Inaccessible</label></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table>
+                    <label class="padding" style="font-weight: bolder; margin-left: 60px">Condensate Drain Condition:</label>
+                    <tr>
+                      <td>
+                        <div class="grid">
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Nominal</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Blocked</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Missing P-Trap</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Non-Existant</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Not Sufficient</label></div>
+                          <div><label><input type="checkbox" id="FPAP" name="FPAP" />Inaccessible</label></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <div>
+                    <label style="margin-left:60px;margin-right:50px; margin-top: 10px;font-weight: bolder;">Notes</label>
+                    <textarea style="margin-left:50px;margin-right:50px;width: 85%;height:5rem;"></textarea>
+                  </div>
+            
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  * {
+    font-size: 11px;
+  }
+  .logo {
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .main-wrapper {
+    max-width: 816px;
+    min-width: 816px;
+    max-height: 1056px;
+    min-height: 1056px;
+    contain: strict;
+    font-size: small;
+    border: solid;
+  }
+
+  .mainField {
+    width: 400px;
+    text-align: left;
+  }
+
+  .form-title {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .noBorder {
+    border-bottom: transparent;
+  }
+
+  .padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .shaded {
+    background-color: #646b7933;
+    border-color:transparent;
+    border: none
+
+  }
+
+  table {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 85%;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    margin-bottom: 0px;
+  }
+
+  .row-header > td > label,
+  .headTable > tbody > tr > td > label {
+    font-weight: bolder;
+  }
+
+  input[type=text], input[type=date],textarea {
+  margin-bottom: 0px;
+}
+
+.grid, table>tbody>tr>td>label {
+  white-space: nowrap;
+}
+
+.grid>div>label {
+  padding-right: 45px;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+input[type=text], input[type=date],textarea {
+  margin-bottom: 0px;
+}
+
+[role=button].outline {
+  color: #646b79;
+  border-color: #646b7933;
+  background-color: white;
+}
+
+table {
+  margin-bottom: 0px;
+}
+
+  @media print {
+    /* All your print styles go here */
+
+    textarea {
+      resize: none;
+    }
+
+    input[type="date"] {
+      color: transparent;
+    }
+
+    .main-wrapper {
+      border: none;
+    }
+  }
+</style>
