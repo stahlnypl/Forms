@@ -50,8 +50,8 @@
                 </td>
               </tr>
             </table>
-            <div style="margin-left:50px;margin-right:50px;">
-              <label>Instructions</label>
+            <div style="margin-left:60px;margin-right:50px;">
+              <label style="font-weight:bolder">Instructions</label>
               <p>
                 Complete each line item for roof assessment. If site has more than one type or area of roofing make sure note the different roof locations. Circle the best description for the roof type being assessed. Circle the best description corresponding to the roof condition. Record the height of the height of the parapet in Inches. Circle the best description of the parapet material type. Check <b>Yes</b> or <b>No</b> indicating if the roof has approiate fall protection. Note any additional comments in apporiate section at the bottom of the page.
               </p>
@@ -59,12 +59,12 @@
             <table class="dataTable">
               <colgroup>
               </colgroup>
-              <tr class="row-header-gs">
+              <tr class="row-header">
                 <td>
                   <label id="header" class="form-label">Roof Assessment Data</label>
                 </td>
                 <td>
-                  <label id="header" class="label-comment">Details</label>
+                  <label id="header" class="label-comment"></label>
                 </td>
               </tr>
               <tr>
@@ -81,7 +81,7 @@
                   <a href="#" role="button" class="outline">Skillion</a>
                   <a href="#" role="button" class="outline">Dormer</a>
                   <a href="#" role="button" class="outline">Tower</a>
-                  <a href="#" role="button" class="outline">Other:___________</a>
+                  <a href="#" role="button" class="outline">Other: ___________</a>
                 </td>
               </tr>
               <tr>
@@ -147,7 +147,7 @@
                   <a href="#" role="button" class="outline">Skillion</a>
                   <a href="#" role="button" class="outline">Dormer</a>
                   <a href="#" role="button" class="outline">Tower</a>
-                  <a href="#" role="button" class="outline">Other:___________</a>
+                  <a href="#" role="button" class="outline">Other: ___________</a>
                 </td>
               </tr>
               <tr>
@@ -180,7 +180,7 @@
                 </td>
                 <td>
 
-                  <div class="grid">
+                  <div class="grid" >
                     <div><label>
                       <input type="checkbox" id="FPAP" name="FPAP">
                       Yes
@@ -196,7 +196,7 @@
               </tr>
             </table>
             <div>
-              <label style="margin-left:50px;margin-right:50px;">Notes</label>
+              <label style="margin-left:60px;margin-right:50px;font-weight: bolder;">Notes</label>
               <textarea style="margin-left:50px;margin-right:50px;width: 85%;height:10rem;"></textarea>
             </div>
         </div>
@@ -210,7 +210,7 @@
     width: 200px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 10px;
+    padding-top: 25px;
   }
 
   .main-wrapper {
@@ -247,12 +247,16 @@ table {
 }
 
 [role=button].outline {
-color: #7b8495;
-border-color: #7b849580;
+  color: #646b79;
+  border-color: #646b7933
 }
 
 input[type=text], input[type=date],textarea {
   margin-bottom: 0px;
+}
+
+.headTable>tbody>tr>td>label, .row-header>td>label {
+  font-weight: bolder;
 }
 
 @media print {
