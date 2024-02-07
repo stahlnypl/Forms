@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/Assets/css/pico.classless.css" />
+    <link rel="stylesheet" href="/Assets/css/pico.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="mainArea">
+      <div class="main-wrapper">
+        <div class="form-wrapper">
+          <header>
+            <img class="logo" src="/Assets/imgs/NYPL_logo_Masthead.png" />
+          </header>
+          <div class="form-title">
+            <h2 class="">Quarterly HVAC Inspection</h2>
+          </div>
+          <table class="headTable">
+            <tr>
+              <td>
+                <label class="form-label">Site Name:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="sitename"
+                  id="sitename"
+                  class="form-input"
+                />
+              </td>
+              <td>
+                <label class="form-label">Assessment Date:</label>
+              </td>
+              <td>
+                <input
+                  type="date"
+                  name="inspectiondate"
+                  id="inspectiondate"
+                  class="form-input"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="form-label">Site Address:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="siteaddress"
+                  id="siteaddress"
+                  class="form-input"
+                />
+              </td>
+              <td>
+                <label class="form-label">Assessed by:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="inspectiondate"
+                  id="inspectiondate"
+                  class="form-input"
+                />
+              </td>
+            </tr>
+          </table>
+          <table>
+            <label style="font-weight: bolder; margin-left: 60px"
+              >Information</label
+            >
+            <tr>
+              <td><label>Arrival Time:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="rooflocation"
+                  id="rooflocation"
+                  class="form-input"
+                />
+              </td>
+              <td><label>Temperature:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="rooflocation"
+                  id="rooflocation"
+                  class="form-input"
+                />
+              </td>
+              <td><label>Humidity:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="rooflocation"
+                  id="rooflocation"
+                  class="form-input"
+                />
+              </td>
+            </tr>
+          </table>
+          <table>
+            <label style="font-weight: bolder; margin-left: 60px">Building Automation System Data</label>
+            <tr>
+              <td>
+                <label class="form-label-simple">Setbacks scheduled for 2 hours before opening & after closing each day?</label
+                >
+              </td>
+              <td>
+                <div class="grid">
+                  <div>
+                    <label>
+                      <input type="checkbox" id="FPAP" name="FPAP" />
+                      Yes
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input type="checkbox" id="FPAP" name="FPAP" />
+                      No
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            </table>
+            <table>
+              <label style="font-weight: bolder; margin-left: 60px">Air Supply & Exhaust Systems</label>
+              <tr>
+                <td><label>Supply Registers Condition</label></td>
+                <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+              </tr>
+              <tr>
+                <td><label>Return Air Grates Condition</label></td>
+                <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+              </tr>
+              <tr>
+                <td><label>Bathroom Exhaust Condition</label></td>
+                <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+              </tr>
+              <tr>
+                <td><label>Relative Humidity</label></td>
+                <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+              </tr>
+              </table>
+              <table>
+                <label style="font-weight: bolder; margin-left: 60px;">Air Supply & Exhaust Systems</label>
+                <tr>
+                  <td>
+                    <label class="form-label-simple">Hot water on?</label
+                    >
+                  </td>
+                  <td>
+                    <div class="grid">
+                      <div>
+                        <label>
+                          <input type="checkbox" id="FPAP" name="FPAP" />
+                          Yes
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input type="checkbox" id="FPAP" name="FPAP" />
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="form-label-simple">Hot Water Set Point:</label>
+                  </td>
+                  <td style="justify-content: space-between;display: flex;">
+                    <a href="#" role="button" class="outline">Hot</a>
+                    <a href="#" role="button" class="outline">Warm</a>
+                    <a href="#" role="button" class="outline">Off</a>
+                    <a href="#" role="button" class="outline">Other: ___________</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label>Operating temperature (in °F):</label></td>
+                  <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                </tr>
+                </table>
+                <table>
+                  <label style="font-weight: bolder; margin-left: 60px;">Actions Checklist</label>
+                  <tr>
+                    <td>
+                        <div>
+                          <label>
+                            <input type="checkbox" id="FPAP" name="FPAP" />
+                            Thermostat controls set to "On" rather than "Auto"
+                          </label>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <div>
+                          <label>
+                            <input type="checkbox" id="FPAP" name="FPAP" />
+                            Rooms without ventilation are locked & employees aware access is restricted
+                          </label>
+                        </div>
+                    </td>
+                  </tr>
+                  </table>
+                  <table>
+                    <label style="font-weight: bolder; margin-left: 60px;">Air Handling Units on Site</label>
+                    <tbody>
+                      <tr>
+                        <td>Unit Number</td>
+                        <td>Location on Site (floor, Room)</td>
+                        <td style="width: 60px">Page</td>
+                        <td>Notes</td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                      </tr>
+                      </tbody>
+                      </table>
+                      <div>
+                        <label style="margin-left:60px;margin-right:50px;font-weight: bolder;">Notes</label>
+                        <textarea style="margin-left:50px;margin-right:50px;width: 85%;height:5rem;"></textarea>
+                      </div>
+              
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  * {
+    font-size: 11px;
+  }
+  .logo {
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+
+  .main-wrapper {
+    max-width: 816px;
+    min-width: 816px;
+    max-height: 1056px;
+    min-height: 1056px;
+    contain: strict;
+    font-size: small;
+    border: solid;
+  }
+
+  .mainField {
+    width: 400px;
+    text-align: left;
+  }
+
+  .form-title {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  table {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 85%;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    margin-bottom: 0px;
+  }
+
+  .row-header > td > label,
+  .headTable > tbody > tr > td > label {
+    font-weight: bolder;
+  }
+
+  input[type=text], input[type=date],textarea {
+  margin-bottom: 0px;
+}
+
+.grid, table>tbody>tr>td>label {
+  white-space: nowrap;
+}
+
+.grid>div>label {
+  padding-right: 45px;
+}
+
+  @media print {
+    /* All your print styles go here */
+
+    textarea {
+      resize: none;
+    }
+
+    input[type="date"] {
+      color: transparent;
+    }
+
+    .main-wrapper {
+      border: none;
+    }
+  }
+</style>
