@@ -202,10 +202,6 @@
               <td><label>BMS/BAS manuals/software documentation available on site?</label></td>
               <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
             </tr>
-            <tr>
-              <td><label>BMS/BAS manuals/software documentation available on site?</label></td>
-              <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-            </tr>
           </table>
           <table>
             <label style="font-weight: bolder; margin-left: 60px">Building Automation System Data</label>
@@ -342,5 +338,11 @@
     .main-wrapper {
       border: none;
     }
+
+    input:not([type=checkbox], [type=radio], [type=range], [type=file]):is([type=date], [type=datetime-local], [type=month], [type=time], [type=week]) {
+      background-image: none;
+    }
+
+
   }
 </style>
