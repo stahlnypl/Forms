@@ -69,7 +69,7 @@
           </table>
           <table>
             <label style="font-weight: bolder; margin-left: 60px"
-              >Information</label
+              >Conditions</label
             >
             <tr>
               <td><label>Arrival Time:</label></td>
@@ -130,19 +130,19 @@
               <label style="font-weight: bolder; margin-left: 60px">Air Supply & Exhaust Systems</label>
               <tr>
                 <td><label>Supply Registers Condition</label></td>
-                <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                <td><input style="width:150%;position: relative; right:150px" type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
               </tr>
               <tr>
                 <td><label>Return Air Grates Condition</label></td>
-                <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                <td><input style="width:150%;position: relative; right:150px" type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
               </tr>
               <tr>
                 <td><label>Bathroom Exhaust Condition</label></td>
-                <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                <td><input style="width:150%;position: relative; right:150px" type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
               </tr>
               <tr>
-                <td><label>Relative Humidity</label></td>
-                <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                <td><label>Indoor Relative Humidity</label></td>
+                <td><input style="width:max-content;position:relative;left:16rem" type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
               </tr>
               </table>
               <table>
@@ -256,7 +256,7 @@
     width: 200px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 10px;
+    padding-top: 20px;
   }
 
   .main-wrapper {
@@ -313,6 +313,10 @@
 [role=button].outline {
   color: #646b79;
   border-color: #646b7933
+}
+
+input:not([type=checkbox], [type=radio], [type=range], [type=file]), select, textarea {
+  padding: 0;
 }
 
   @media print {
