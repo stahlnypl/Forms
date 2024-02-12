@@ -130,19 +130,42 @@
               <label style="font-weight: bolder; margin-left: 60px">Air Supply & Exhaust Systems</label>
               <tr>
                 <td><label>Supply Registers Condition</label></td>
-                <td><input style="width:150%;position: relative; right:150px" type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                <td style="justify-content: space-between;display: flex;">
+                  <a href="#" role="button" class="outline">B:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">1st:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">2nd:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">3rd:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">4th:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">5th:</br>Clean | Dirty</a>
+                </td>
               </tr>
               <tr>
                 <td><label>Return Air Grates Condition</label></td>
-                <td><input style="width:150%;position: relative; right:150px" type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                <td style="justify-content: space-between;display: flex;">
+                  <a href="#" role="button" class="outline">B:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">1st:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">2nd:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">3rd:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">4th:</br>Clean | Dirty</a>
+                  <a href="#" role="button" class="outline">5th:</br>Clean | Dirty</a>
+                </td>
+                
               </tr>
+              
               <tr>
                 <td><label>Bathroom Exhaust Condition</label></td>
-                <td><input style="width:150%;position: relative; right:150px" type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                <td style="justify-content: space-between;display: flex;">
+                  <a href="#" role="button" class="outline">B:</br>Good | Issue</a>
+                  <a href="#" role="button" class="outline">1st:</br>Good | Issue</a>
+                  <a href="#" role="button" class="outline">2nd:</br>Good | Issue</a>
+                  <a href="#" role="button" class="outline">3rd:</br>Good | Issue</a>
+                  <a href="#" role="button" class="outline">4th:</br>Good | Issue</a>
+                  <a href="#" role="button" class="outline">5th:</br>Good | Issue</a>
+                </td>
               </tr>
               <tr>
                 <td><label>Indoor Relative Humidity</label></td>
-                <td><input style="width:max-content;position:relative;left:16rem" type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
+                <td><input style="width:max-content;position:relative;left:33rem" type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
               </tr>
               </table>
               <table>
@@ -208,38 +231,10 @@
                     </td>
                   </tr>
                   </table>
-                  <table>
-                    <label style="font-weight: bolder; margin-left: 60px;">Air Handling Units on Site</label>
-                    <tbody>
-                      <tr>
-                        <td>Unit Number</td>
-                        <td>Location on Site (floor, Room)</td>
-                        <td style="width: 60px">Page</td>
-                        <td>Notes</td>
-                      </tr>
-                      <tr>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                      </tr>
-                      <tr>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                      </tr>
-                      <tr>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                        <td><input type="text" name="rooflocation" id="rooflocation" class="form-input" /></td>
-                      </tr>
-                      </tbody>
-                      </table>
+                 
                       <div>
-                        <label style="margin-left:60px;margin-right:50px;font-weight: bolder;">Notes</label>
-                        <textarea style="margin-left:50px;margin-right:50px;width: 85%;height:5rem;"></textarea>
+                        <label style="margin-left:60px;margin-right:50px;margin-top:20px;font-weight: bolder;">Notes</label>
+                        <textarea style="margin-left:50px;margin-right:50px;width: 85%;height:7rem;"></textarea>
                       </div>
               
         </div>
@@ -315,9 +310,7 @@
   border-color: #646b7933
 }
 
-input:not([type=checkbox], [type=radio], [type=range], [type=file]), select, textarea {
-  padding: 0;
-}
+
 
   @media print {
     /* All your print styles go here */
