@@ -567,6 +567,10 @@ input[type=date] {
     margin-bottom: 0px;
 }
 
+[type=checkbox] {
+  border-color: #828894;
+}
+
 .main-wrapper {
     max-width: 816px;
     min-width: 816px;
@@ -600,7 +604,7 @@ td  {
   border: solid;
   padding: 1px;
   border-width: 0.0625rem;
-  border-color:#e7eaf0;
+  border-color:#828894;
 }
 
 td.checkboxColumn {
@@ -616,7 +620,7 @@ td.checkboxColumn {
     width:200px;
     margin-left:50px;
     margin-right: 50px;
-    margin-top: 10px;
+    margin-top: 15px;
 
 }
 
@@ -693,31 +697,28 @@ footer {
 }
 
 @media print {
-  /* All your print styles go here */
+    /* All your print styles go here */
 
-    input[type=date] {
+    textarea {
+      resize: none;
+      border: none;
+    }
+
+    input[type="date"] {
       color: transparent;
-  }
+    }
 
-  textarea {
-    border-color: transparent;
-  }
+    .main-wrapper {
+      border: none;
+    }
 
-  input[type=text] {
-    border: transparent
-}
+    input[type="text"], input[type="date"] {
+      border: none;
+    }
 
-input[type=date] {
-    border: transparent
-}
-
-.main-wrapper {
-  border:none
-}
-
-* {
-  margin: none;
-}
+    input:not([type=checkbox], [type=radio], [type=range], [type=file]):is([type=date], [type=datetime-local], [type=month], [type=time], [type=week]) {
+      background-image: none;
+    }
 
   }
 
